@@ -25,7 +25,7 @@ namespace eCommerce.Core.Validators
 
         // Validate the PersonName property.
         RuleFor(request => request.PersonName)
-            .NotEmpty().WithMessage("PersonName is required")
+            .NotEmpty().WithMessage("PersonName can't be null")
             .Length(1, 50).WithMessage("Person Name should be 1 to 50 characters long");
 
         // Validate the Gender property.
